@@ -1,0 +1,67 @@
+.rodape {
+    padding: 1em 1em 1.5em;
+    background-color: var(--branco);
+}
+
+.rodape__titulo {
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+}
+
+.rodape__lista {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .div__lista {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 2em;
+    }
+
+    footer h2 {
+        font-size: 24px;
+    }
+
+    .texto__item {
+        font-size: 14px;
+        color: var(--cinza-escuro);
+        display: inline;
+        padding-left: 0.5em;
+    }
+
+    .lista__educacao--item {
+        display: flex;
+        align-items: center;
+        padding-top: 1em;
+    }
+
+    .lista__titulo {
+        font-size: 14px;
+        color: var(--cinza);
+        text-transform: uppercase;
+    }
+
+    .rodape__lista {
+        display: initial;
+    }
+
+    .rodape__titulo {
+        color: var(--preto);
+        font-size: 24px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .rodape__lista{
+        border-left: 1px solid var(--cinza);
+        padding-left: 1em;
+    }
+
+    .rodape__titulo {
+        text-align: center;
+    }
+}
